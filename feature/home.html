@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="/image/blood-bank-logo.jpeg" alt="logo" />
+      </div>
+      <div class="header__info">
+        <img src="image/avt1.png" alt="avt" />
+        <div class="header__info--details">
+          <h3>Nguyen Van A</h3>
+          <p>26/01/2022</p>
+        </div>
+      </div>
+      <div class="header__search">
+        <input type="text" placeholder="Nhập gì đó" />
+        <button>Tìm kiếm</button>
+      </div>
+      <div class="header__bell">
+        <a href=""
+          ><iconify-icon
+            icon="line-md:bell-loop"
+            width="24"
+            height="24"
+          ></iconify-icon
+        ></a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="sidebar">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#home">
+              <span class="sidebar__icon"
+                ><iconify-icon
+                  icon="bxs:home"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></span>
+              Home
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#donors">
+              <span class="sidebar__icon"
+                ><iconify-icon
+                  icon="bxs:donate-blood"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></span>
+              Donors
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#recipients">
+              <span class="sidebar__icon"
+                ><iconify-icon
+                  icon="streamline:blood-bag-donation-solid"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></span>
+              Recipients
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#donation-requests">
+              <span class="sidebar__icon"
+                ><iconify-icon
+                  icon="fa-solid:notes-medical"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></span>
+              Donation Requests
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#blood-requests">
+              <span class="sidebar__icon"
+                ><iconify-icon
+                  icon="mdi:blood-plus"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></span>
+              Blood Requests
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#blood-request-history">
+              <span class="sidebar__icon"
+                ><iconify-icon
+                  icon="ic:round-history"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></span>
+              Blood Request History
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#view-blood-bank">
+              <span class="sidebar__icon"
+                ><iconify-icon
+                  icon="maki:blood-bank"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></span>
+              View Blood Bank
+            </a>
+          </li>
+          <li class="sidebar__item">
+            <a class="sidebar__link" href="#employee-management">
+              <span class="sidebar__icon"
+                ><iconify-icon
+                  icon="clarity:employee-group-solid"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></span>
+              Employee Management
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <div id="home" class="content__section">
+          <div class="notification">
+            <span class="notification__icon">
+              <iconify-icon
+                icon="mdi:bell"
+                width="24"
+                height="24"
+              ></iconify-icon>
+            </span>
+            <span class="notification__content"> Bạn có thông báo mới! </span>
+          </div>
+          <h2 class="content__title">Tổng quan</h2>
+          <div class="info-section">
+            <div class="info-box">
+              <h3 class="info-box__title">Số người hiến máu</h3>
+              <a href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon
+                    icon="ci:users-group"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </span>
+                <span class="info-box__data">1234</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <h3 class="info-box__title">Yêu cầu nhận máu</h3>
+              <a href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon
+                    icon="icon-park:accept-email"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </span>
+                <span class="info-box__data">567</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <h3 class="info-box__title">Yêu cầu máu đã duyệt</h3>
+              <a href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon
+                    icon="mdi:check-circle-outline"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </span>
+                <span class="info-box__data">345</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <h3 class="info-box__title">Số máu còn trong kho</h3>
+              <a title="Chi tiết" href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon
+                    icon="healthicons:blood-bag-outline"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </span>
+                <span class="info-box__data">890 L</span>
+              </div>
+            </div>
+          </div>
+          <h2 class="content__title">Thông tin máu trong kho</h2>
+          <div class="blood-stock__grid">
+            <div class="blood-stock__cell">
+              <span class="blood-stock__icon">
+                <iconify-icon
+                  icon="healthicons:blood-a-p"
+                  width="64"
+                  height="64"
+                ></iconify-icon>
+              </span>
+              <span class="blood-stock__group">A+</span>
+              <span class="blood-stock__quantity">120 L</span>
+              <span class="blood-stock__expiry">Ngày hết hạn: 2023-12-01</span>
+            </div>
+            <div class="blood-stock__cell">
+              <span class="blood-stock__icon">
+                <iconify-icon
+                  icon="healthicons:blood-a-n"
+                  width="64"
+                  height="64"
+                ></iconify-icon>
+              </span>
+              <span class="blood-stock__group">A-</span>
+              <span class="blood-stock__quantity">80 L</span>
+              <span class="blood-stock__expiry">Ngày hết hạn: 2023-11-15</span>
+            </div>
+            <div class="blood-stock__cell">
+              <span class="blood-stock__icon">
+                <iconify-icon
+                  icon="healthicons:blood-b-p"
+                  width="64"
+                  height="64"
+                ></iconify-icon>
+              </span>
+              <span class="blood-stock__group">B+</span>
+              <span class="blood-stock__quantity">100 L</span>
+              <span class="blood-stock__expiry">Ngày hết hạn: 2023-12-10</span>
+            </div>
+            <div class="blood-stock__cell">
+              <span class="blood-stock__icon">
+                <iconify-icon
+                  icon="healthicons:blood-b-n"
+                  width="64"
+                  height="64"
+                ></iconify-icon>
+              </span>
+              <span class="blood-stock__group">B-</span>
+              <span class="blood-stock__quantity">60 L</span>
+              <span class="blood-stock__expiry">Ngày hết hạn: 2023-11-20</span>
+            </div>
+            <div class="blood-stock__cell">
+              <span class="blood-stock__icon">
+                <iconify-icon
+                  icon="healthicons:blood-ab-p"
+                  width="64"
+                  height="64"
+                ></iconify-icon>
+              </span>
+              <span class="blood-stock__group">AB+</span>
+              <span class="blood-stock__quantity">50 L</span>
+              <span class="blood-stock__expiry">Ngày hết hạn: 2023-12-05</span>
+            </div>
+            <div class="blood-stock__cell">
+              <span class="blood-stock__icon">
+                <iconify-icon
+                  icon="healthicons:blood-ab-n"
+                  width="64"
+                  height="64"
+                ></iconify-icon>
+              </span>
+              <span class="blood-stock__group">AB-</span>
+              <span class="blood-stock__quantity">30 L</span>
+              <span class="blood-stock__expiry">Ngày hết hạn: 2023-11-25</span>
+            </div>
+            <div class="blood-stock__cell">
+              <span class="blood-stock__icon">
+                <iconify-icon
+                  icon="healthicons:blood-o-p"
+                  width="64"
+                  height="64"
+                ></iconify-icon>
+              </span>
+              <span class="blood-stock__group">O+</span>
+              <span class="blood-stock__quantity">200 L</span>
+              <span class="blood-stock__expiry">Ngày hết hạn: 2023-12-15</span>
+            </div>
+            <div class="blood-stock__cell">
+              <span class="blood-stock__icon">
+                <iconify-icon
+                  icon="healthicons:blood-o-n"
+                  width="64"
+                  height="64"
+                ></iconify-icon>
+              </span>
+              <span class="blood-stock__group">O-</span>
+              <span class="blood-stock__quantity">90 L</span>
+              <span class="blood-stock__expiry">Ngày hết hạn: 2023-11-30</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="donors" class="content__section">
+          <div class="info-section">
+            <div class="info-box">
+              <h3 class="info-box__title">Số người hiến máu</h3>
+              <a href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon
+                    icon="ci:users-group"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </span>
+                <span class="info-box__data">1234</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <h3 class="info-box__title">Tổng lượng máu đã nhận</h3>
+              <a href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon icon="mdi:blood-bag"></iconify-icon>
+                </span>
+                <span class="info-box__data">567</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <h3 class="info-box__title">Trung bình số máu nhận 1 tháng</h3>
+              <a href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon icon="mdi:calendar-month"></iconify-icon>
+                </span>
+                <span class="info-box__data">345</span>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="content__title">Danh sách người hiến máu</h2>
+          <div class="table-container">
+            <div class="table-controls">
+              <input
+                type="text"
+                id="filter-name"
+                placeholder="Filter by Name"
+              />
+              <input
+                type="date"
+                id="filter-date"
+                placeholder="Filter by Last Donation Date"
+              />
+              <select id="filter-blood-type">
+                <option value="">Lọc bởi nhóm máu</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+              <button id="add-donor">Thêm người hiến</button>
+            </div>
+            <table class="donor-table">
+              <thead>
+                <tr>
+                  <th>ID người hiến</th>
+                  <th>Tên người hiến</th>
+                  <th>Ngày sinh</th>
+                  <th>Giới tính</th>
+                  <th>Cân nặng</th>
+                  <th>Nhóm máu</th>
+                  <th>Địa chỉ</th>
+                  <th>Số điện thoại</th>
+                  <th>Ngày hiến gần đây nhất</th>
+                  <th>Tình trạng sức khỏe</th>
+                  <th>Hành động</th>
+                </tr>
+              </thead>
+              <tbody id="donor-table-body">
+                <tr>
+                  <td>1</td>
+                  <td>John Doe</td>
+                  <td>1990-01-01</td>
+                  <td>Male</td>
+                  <td>75 kg</td>
+                  <td>O+</td>
+                  <td>123 Main St</td>
+                  <td>123-456-7890</td>
+                  <td>2023-10-01</td>
+                  <td>Healthy</td>
+                  <td class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jane Smith</td>
+                  <td>1985-05-15</td>
+                  <td>Female</td>
+                  <td>65 kg</td>
+                  <td>A-</td>
+                  <td>456 Elm St</td>
+                  <td>987-654-3210</td>
+                  <td>2023-09-15</td>
+                  <td>Healthy</td>
+                  <td class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="add-donor-form" class="add-donor-form">
+            <h2
+              style="
+                text-align: center;
+                font-weight: 600;
+                text-transform: uppercase;
+              "
+              class="content__title"
+            >
+              Thêm người hiến máu
+            </h2>
+            <form>
+              <label for="donor-name">Tên người hiến:</label>
+              <input type="text" id="donor-name" name="donor-name" required />
+
+              <label for="donor-dob">Ngày sinh:</label>
+              <input type="date" id="donor-dob" name="donor-dob" required />
+
+              <label for="donor-gender">Giới tính:</label>
+              <select id="donor-gender" name="donor-gender" required>
+                <option value="Male">Nam</option>
+                <option value="Female">Nữ</option>
+              </select>
+
+              <label for="donor-weight">Cân nặng:</label>
+              <input
+                type="number"
+                id="donor-weight"
+                name="donor-weight"
+                required
+              />
+
+              <label for="donor-blood-type">Nhóm máu:</label>
+              <select id="donor-blood-type" name="donor-blood-type" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+
+              <label for="donor-address">Địa chỉ:</label>
+              <input
+                type="text"
+                id="donor-address"
+                name="donor-address"
+                required
+              />
+
+              <label for="donor-phone">Số điện thoại:</label>
+              <input type="tel" id="donor-phone" name="donor-phone" required />
+
+              <label for="donor-last-donation">Ngày hiến gần đây nhất:</label>
+              <input
+                type="date"
+                id="donor-last-donation"
+                name="donor-last-donation"
+                required
+              />
+
+              <label for="donor-health-status">Tình trạng sức khỏe:</label>
+              <input
+                type="text"
+                id="donor-health-status"
+                name="donor-health-status"
+                required
+              />
+
+              <button type="submit">Lưu</button>
+              <button type="button" id="cancel-add-donor">Hủy</button>
+            </form>
+          </div>
+        </div>
+        <div id="recipients" class="content__section">
+          <div class="info-section">
+            <div class="info-box">
+              <h3 class="info-box__title">Số người hiến máu</h3>
+              <a href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon
+                    icon="ci:users-group"
+                    width="24"
+                    height="24"
+                  ></iconify-icon>
+                </span>
+                <span class="info-box__data">1234</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <h3 class="info-box__title">Tổng lượng máu đã nhận</h3>
+              <a href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon icon="mdi:blood-bag"></iconify-icon>
+                </span>
+                <span class="info-box__data">567</span>
+              </div>
+            </div>
+            <div class="info-box">
+              <h3 class="info-box__title">Trung bình số máu nhận 1 tháng</h3>
+              <a href="" class="info-box__more"
+                ><iconify-icon
+                  icon="proicons:full-screen-maximize"
+                  width="24"
+                  height="24"
+                ></iconify-icon
+              ></a>
+              <div class="info-box__content">
+                <span class="info-box__icon">
+                  <iconify-icon icon="mdi:calendar-month"></iconify-icon>
+                </span>
+                <span class="info-box__data">345</span>
+              </div>
+            </div>
+          </div>
+          <h2 class="content__title">Recipients</h2>
+          <div class="table-container">
+            <div class="table-controls">
+              <input
+                type="text"
+                id="filter-recipient-name"
+                placeholder="Filter by Name"
+              />
+              <input
+                type="date"
+                id="filter-recipient-date"
+                placeholder="Filter by Date of Receiving"
+              />
+              <select id="filter-recipient-blood-type">
+                <option value="">Lọc bởi nhóm máu</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+              <button id="add-recipient">Thêm người nhận</button>
+            </div>
+            <table class="recipient-table">
+              <thead>
+                <tr>
+                  <th>Mã người nhận</th>
+                  <th>Tên người nhận</th>
+                  <th>Nhóm máu</th>
+                  <th>Địa chỉ</th>
+                  <th>Số điện thoại</th>
+                  <th>Lý do nhận</th>
+                  <th>Ngày nhận</th>
+                  <th>Hành động</th>
+                </tr>
+              </thead>
+              <tbody id="recipient-table-body">
+                <tr>
+                  <td>1</td>
+                  <td>Nguyen Van B</td>
+                  <td>O+</td>
+                  <td>789 Pine St</td>
+                  <td>123-456-7890</td>
+                  <td>Emergency</td>
+                  <td>2023-10-05</td>
+                  <td class="actions">
+                    <button class="edit">Sửa</button>
+                    <button class="delete">Xóa</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Tran Thi C</td>
+                  <td>A-</td>
+                  <td>456 Oak St</td>
+                  <td>987-654-3210</td>
+                  <td>Surgery</td>
+                  <td>2023-09-20</td>
+                  <td class="actions">
+                    <button class="edit">Sửa</button>
+                    <button class="delete">Xóa</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="add-recipient-form" class="add-recipient-form">
+            <h2
+              style="
+                text-align: center;
+                font-weight: 600;
+                text-transform: uppercase;
+              "
+              class="content__title"
+            >
+              Thêm người nhận máu
+            </h2>
+            <form>
+              <label for="recipient-name">Tên người nhận:</label>
+              <input
+                type="text"
+                id="recipient-name"
+                name="recipient-name"
+                required
+              />
+
+              <label for="recipient-blood-type">Nhóm máu:</label>
+              <select
+                id="recipient-blood-type"
+                name="recipient-blood-type"
+                required
+              >
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+
+              <label for="recipient-address">Địa chỉ:</label>
+              <input
+                type="text"
+                id="recipient-address"
+                name="recipient-address"
+                required
+              />
+
+              <label for="recipient-phone">Số điện thoại:</label>
+              <input
+                type="tel"
+                id="recipient-phone"
+                name="recipient-phone"
+                required
+              />
+
+              <label for="recipient-reason">Lý do nhận:</label>
+              <input
+                type="text"
+                id="recipient-reason"
+                name="recipient-reason"
+                required
+              />
+
+              <label for="recipient-date">Ngày nhận:</label>
+              <input
+                type="date"
+                id="recipient-date"
+                name="recipient-date"
+                required
+              />
+
+              <button type="submit">Lưu</button>
+              <button type="button" id="cancel-add-recipient">Hủy</button>
+            </form>
+          </div>
+        </div>
+        <div id="donation-history" class="content__section">
+          <h2>Donation History</h2>
+          <p>History of donations.</p>
+        </div>
+        <div id="donation-requests" class="content__section">
+          <h2>Donation Requests</h2>
+          <p>Details of donation requests.</p>
+        </div>
+        <div id="blood-requests" class="content__section">
+          <h2>Blood Requests</h2>
+          <p>Details of blood requests.</p>
+        </div>
+        <div id="blood-request-history" class="content__section">
+          <h2>Blood Request History</h2>
+          <p>History of blood requests.</p>
+        </div>
+        <div id="view-blood-bank" class="content__section">
+          <h2>View Blood Bank</h2>
+          <p>Information about the blood bank.</p>
+        </div>
+        <div id="employee-management" class="content__section">
+          <h2>Employee Management</h2>
+          <p>Manage employees here.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sidebarItems = document.querySelectorAll(".sidebar__item");
+      const sidebarLinks = document.querySelectorAll(".sidebar__link");
+      const addDonorButton = document.getElementById("add-donor");
+      const addDonorForm = document.getElementById("add-donor-form");
+      const donorTable = document.querySelector("#donors .table-container");
+      const cancelAddDonorButton = document.getElementById("cancel-add-donor");
+      const addRecipientButton = document.getElementById("add-recipient");
+      const addRecipientForm = document.getElementById("add-recipient-form");
+      const recipientTable = document.querySelector(
+        "#recipients .table-container"
+      );
+      const cancelAddRecipientButton = document.getElementById(
+        "cancel-add-recipient"
+      );
+
+      sidebarItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Remove active class from all items and links
+          sidebarItems.forEach((i) =>
+            i.classList.remove("sidebar__item--active")
+          );
+          sidebarLinks.forEach((link) =>
+            link.classList.remove("sidebar__link--active")
+          );
+
+          // Add active class to the clicked item and link
+          item.classList.add("sidebar__item--active");
+          item
+            .querySelector(".sidebar__link")
+            .classList.add("sidebar__link--active");
+        });
+      });
+
+      addDonorButton.addEventListener("click", () => {
+        donorTable.style.display = "none";
+        addDonorForm.style.display = "block";
+        clearDonorForm();
+      });
+
+      cancelAddDonorButton.addEventListener("click", () => {
+        addDonorForm.style.display = "none";
+        donorTable.style.display = "block";
+      });
+
+      addRecipientButton.addEventListener("click", () => {
+        recipientTable.style.display = "none";
+        addRecipientForm.style.display = "block";
+        clearRecipientForm();
+      });
+
+      cancelAddRecipientButton.addEventListener("click", () => {
+        addRecipientForm.style.display = "none";
+        recipientTable.style.display = "block";
+      });
+
+      function clearDonorForm() {
+        document.getElementById("donor-name").value = "";
+        document.getElementById("donor-dob").value = "";
+        document.getElementById("donor-gender").value = "";
+        document.getElementById("donor-weight").value = "";
+        document.getElementById("donor-blood-type").value = "";
+        document.getElementById("donor-address").value = "";
+        document.getElementById("donor-phone").value = "";
+        document.getElementById("donor-last-donation").value = "";
+        document.getElementById("donor-health-status").value = "";
+      }
+
+      function clearRecipientForm() {
+        document.getElementById("recipient-name").value = "";
+        document.getElementById("recipient-blood-type").value = "";
+        document.getElementById("recipient-address").value = "";
+        document.getElementById("recipient-phone").value = "";
+        document.getElementById("recipient-reason").value = "";
+        document.getElementById("recipient-date").value = "";
+      }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const sidebarItems = document.querySelectorAll(".sidebar__item");
+      const sidebarLinks = document.querySelectorAll(".sidebar__link");
+
+      sidebarItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Remove active class from all items and links
+          sidebarItems.forEach((i) =>
+            i.classList.remove("sidebar__item--active")
+          );
+          sidebarLinks.forEach((link) =>
+            link.classList.remove("sidebar__link--active")
+          );
+
+          // Add active class to the clicked item and link
+          item.classList.add("sidebar__item--active");
+          item
+            .querySelector(".sidebar__link")
+            .classList.add("sidebar__link--active");
+        });
+      });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const sidebarItems = document.querySelectorAll(".sidebar__item");
+      const sidebarLinks = document.querySelectorAll(".sidebar__link");
+      const addDonorButton = document.getElementById("add-donor");
+      const addDonorForm = document.getElementById("add-donor-form");
+      const donorTable = document.querySelector(".table-container");
+      const cancelAddDonorButton = document.getElementById("cancel-add-donor");
+
+      sidebarItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Remove active class from all items and links
+          sidebarItems.forEach((i) =>
+            i.classList.remove("sidebar__item--active")
+          );
+          sidebarLinks.forEach((link) =>
+            link.classList.remove("sidebar__link--active")
+          );
+
+          // Add active class to the clicked item and link
+          item.classList.add("sidebar__item--active");
+          item
+            .querySelector(".sidebar__link")
+            .classList.add("sidebar__link--active");
+        });
+      });
+
+      addDonorButton.addEventListener("click", () => {
+        donorTable.style.display = "none";
+        addDonorForm.style.display = "block";
+      });
+
+      cancelAddDonorButton.addEventListener("click", () => {
+        addDonorForm.style.display = "none";
+        donorTable.style.display = "block";
+      });
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const sidebarItems = document.querySelectorAll(".sidebar__item");
+      const sidebarLinks = document.querySelectorAll(".sidebar__link");
+      const addDonorButton = document.getElementById("add-donor");
+      const addDonorForm = document.getElementById("add-donor-form");
+      const donorTable = document.querySelector(".table-container");
+      const cancelAddDonorButton = document.getElementById("cancel-add-donor");
+      const editButtons = document.querySelectorAll(".edit");
+
+      sidebarItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Remove active class from all items and links
+          sidebarItems.forEach((i) =>
+            i.classList.remove("sidebar__item--active")
+          );
+          sidebarLinks.forEach((link) =>
+            link.classList.remove("sidebar__link--active")
+          );
+
+          // Add active class to the clicked item and link
+          item.classList.add("sidebar__item--active");
+          item
+            .querySelector(".sidebar__link")
+            .classList.add("sidebar__link--active");
+        });
+      });
+
+      addDonorButton.addEventListener("click", () => {
+        donorTable.style.display = "none";
+        addDonorForm.style.display = "block";
+        clearForm();
+      });
+
+      cancelAddDonorButton.addEventListener("click", () => {
+        addDonorForm.style.display = "none";
+        donorTable.style.display = "block";
+      });
+
+      editButtons.forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const row = event.target.closest("tr");
+          const cells = row.querySelectorAll("td");
+
+          document.getElementById("donor-name").value = cells[0].textContent;
+          document.getElementById("donor-dob").value = cells[1].textContent;
+          document.getElementById("donor-gender").value = cells[2].textContent;
+          document.getElementById("donor-weight").value = cells[3].textContent;
+          document.getElementById("donor-blood-type").value =
+            cells[4].textContent;
+          document.getElementById("donor-address").value = cells[5].textContent;
+          document.getElementById("donor-phone").value = cells[6].textContent;
+          document.getElementById("donor-last-donation").value =
+            cells[7].textContent;
+          document.getElementById("donor-health-status").value =
+            cells[8].textContent;
+
+          donorTable.style.display = "none";
+          addDonorForm.style.display = "block";
+        });
+      });
+
+      function clearForm() {
+        document.getElementById("donor-name").value = "";
+        document.getElementById("donor-dob").value = "";
+        document.getElementById("donor-gender").value = "";
+        document.getElementById("donor-weight").value = "";
+        document.getElementById("donor-blood-type").value = "";
+        document.getElementById("donor-address").value = "";
+        document.getElementById("donor-phone").value = "";
+        document.getElementById("donor-last-donation").value = "";
+        document.getElementById("donor-health-status").value = "";
+      }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+      const addRecipientButton = document.getElementById("add-recipient");
+      const addRecipientForm = document.getElementById("add-recipient-form");
+      const recipientTable = document.querySelector(
+        "#recipients .table-container"
+      );
+      const cancelAddRecipientButton = document.getElementById(
+        "cancel-add-recipient"
+      );
+
+      addRecipientButton.addEventListener("click", () => {
+        recipientTable.style.display = "none";
+        addRecipientForm.style.display = "block";
+        clearRecipientForm();
+      });
+
+      cancelAddRecipientButton.addEventListener("click", () => {
+        addRecipientForm.style.display = "none";
+        recipientTable.style.display = "block";
+      });
+
+      document.querySelectorAll(".recipient-table .edit").forEach((button) => {
+        button.addEventListener("click", (event) => {
+          const row = event.target.closest("tr");
+          const recipientCode = row.cells[0].innerText;
+          const recipientName = row.cells[1].innerText;
+          const recipientBloodType = row.cells[2].innerText;
+          const recipientAddress = row.cells[3].innerText;
+          const recipientPhone = row.cells[4].innerText;
+          const recipientReason = row.cells[5].innerText;
+          const recipientDate = row.cells[6].innerText;
+
+          document.getElementById("recipient-name").value = recipientName;
+          document.getElementById("recipient-blood-type").value =
+            recipientBloodType;
+          document.getElementById("recipient-address").value = recipientAddress;
+          document.getElementById("recipient-phone").value = recipientPhone;
+          document.getElementById("recipient-reason").value = recipientReason;
+          document.getElementById("recipient-date").value = recipientDate;
+
+          recipientTable.style.display = "none";
+          addRecipientForm.style.display = "block";
+        });
+      });
+
+      document
+        .querySelectorAll(".recipient-table .delete")
+        .forEach((button) => {
+          button.addEventListener("click", (event) => {
+            const row = event.target.closest("tr");
+            row.remove();
+          });
+        });
+
+      function clearRecipientForm() {
+        document.getElementById("recipient-name").value = "";
+        document.getElementById("recipient-blood-type").value = "";
+        document.getElementById("recipient-address").value = "";
+        document.getElementById("recipient-phone").value = "";
+        document.getElementById("recipient-reason").value = "";
+        document.getElementById("recipient-date").value = "";
+      }
+    });
+  </script>
+</html>

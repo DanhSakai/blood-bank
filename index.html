@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="image/blood-bank-logo.jpeg"
+      type="image/x-icon"
+    />
+    <title>Quản lý ngân hàng máu</title>
+  </head>
+  <body>
+    <div class="login">
+      <div class="login__banner"></div>
+      <div class="login__form">
+        <img src="image/blood-bank-logo.jpeg" alt="logo" />
+        <h1 class="login__form--title">Quản lý ngân hàng máu</h1>
+        <p class="login__form--description">
+          Chào mừng đến trang quản lý ngân hàng máu, hãy đăng nhập!
+        </p>
+        <form action="/login" method="post">
+          <label for="username">Tài khoản</label>
+          <input
+            placeholder="Tên đăng nhập"
+            type="text"
+            id="username"
+            name="username"
+            required
+          />
+          <label for="password">Mật khẩu</label>
+          <input
+            placeholder="Nhập mật khẩu"
+            type="password"
+            id="password"
+            name="password"
+            required
+          />
+          <button type="submit">Đăng nhập</button>
+        </form>
+        <p><a href="#">Quên mật khẩu?</a></p>
+        <p>Bạn chưa có tài khoản? <a href="#">Đăng ký ngay</a></p>
+      </div>
+    </div>
+  </body>
+</html>

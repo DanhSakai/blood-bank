@@ -1,0 +1,753 @@
+:root {
+  --main-color: #645dd7;
+  --main-color-dark: #002855;
+  --main-color-light: #0056b3;
+  --second-color: #ff4242;
+  --sub-color: #c1cfda;
+  --main-font: "Source Sans Pro", sans-serif;
+  --main-text-color: #03191e;
+  --second-text-color: #eaf2ef;
+}
+
+/* Reset CSS */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Login form styles */
+.login {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.login__form {
+  margin: 0 auto;
+  left: 80px;
+}
+
+.login__banner {
+  width: 50%;
+  min-width: 600px;
+  height: 100%;
+  background-image: url("/image/blood-bank-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: center;
+}
+.login__form img {
+  width: 40px;
+}
+.login__form label {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.login__form input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--sub-color);
+  outline: none;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+}
+
+.login__form button {
+  margin: 10px 0;
+  border: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  font-family: var(--main-font);
+  background-color: var(--main-color);
+  border-radius: 4px;
+  padding: 10px;
+  color: var(--second-text-color);
+  transition: all 0.3s;
+}
+.login__form button:hover {
+  background-color: var(--main-color-dark);
+  cursor: pointer;
+}
+.login__form button:active {
+  background-color: var(--main-color);
+}
+
+.login__form form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  width: 80%;
+}
+
+.login__form--title {
+  text-align: left;
+  margin: 40px 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--main-color);
+}
+.login__form > p {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin-top: 16px;
+}
+.login__form > p a {
+  color: var(--main-color);
+  font-weight: 500;
+  text-decoration: none;
+}
+.login__form > p a:hover {
+  text-decoration: underline;
+}
+.login__form--description {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+/* CSS FOR HOME PAGE */
+
+/* style.css */
+
+/* Add styles for the header section */
+.header {
+  background-color: #f0f0f0; /* light gray background */
+  padding: 20px;
+  display: flex;
+  font-family: var(--main-font);
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.header__logo {
+  margin-right: 20px;
+  width: 30%;
+}
+
+.header__logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.header__info {
+  width: 30%;
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
+}
+
+.header__info img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.header__info--details {
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+
+.header__info--details h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.header__info--details p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.header__search {
+  width: 35%;
+  margin-left: 20px;
+}
+
+.header__search input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  font-family: var(--main-font);
+  font-size: 1.3rem;
+  width: 50%;
+}
+
+.header__search input[type="text"]:focus {
+  outline: var(--main-color-light) solid 1px;
+}
+
+.header__search button {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-size: 1.3rem;
+}
+
+.header__search button:hover {
+  background-color: var(--second-color);
+}
+
+.header__bell {
+  margin-left: 20px;
+  font-size: 24px;
+  color: #666;
+  justify-self: flex-end;
+}
+
+/* CSS FOR DASBOARD SECTION */
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #f2f6f9;
+}
+
+.sidebar {
+  width: 200px;
+  height: 85vh;
+
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar__item {
+  margin-bottom: 16px;
+  padding: 8px 16px;
+
+  border-radius: 12px;
+}
+
+.sidebar__link {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.sidebar__icon {
+  margin-right: 10px;
+  padding: 8px;
+  font-size: 1.3rem;
+  background-color: #fff;
+  border-radius: 12px;
+  color: var(--main-color);
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
+.content__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 60px 0 40px 0;
+}
+.content__section {
+  display: none;
+}
+
+.content__section:target {
+  display: block;
+}
+.sidebar__item {
+  transition: background-color 0.3s ease;
+}
+
+.sidebar__link {
+  transition: color 0.3s ease;
+}
+
+.sidebar__item--active {
+  background-color: var(--main-color);
+}
+
+.sidebar__link--active {
+  color: var(--second-text-color);
+}
+
+/* CSS FOR BLOOD BANK detail content */
+
+.notification {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: #ffffffd0 solid 1px;
+}
+
+.notification__icon {
+  margin-right: 10px;
+  padding: 8px 9px;
+  background-color: var(--main-text-color);
+  color: var(--second-text-color);
+  border-radius: 50%;
+}
+
+.notification__content {
+  font-size: 14px;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.info-box {
+  background-color: #f8f9fb;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  border: #ffffffd0 solid 1px;
+}
+
+.info-box__title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.info-box__more {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.info-box__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.info-box__icon {
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 6px 7px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  border: #e4f5f7 1px solid;
+}
+
+.info-box__data {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.blood-stock__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 64px;
+}
+.blood-stock__cell {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: left;
+  position: relative;
+}
+
+.blood-stock__icon {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #8d0000;
+}
+.blood-stock__icon > iconify-icon {
+  font-size: 1.5rem;
+}
+
+.blood-stock__group {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 1.5rem;
+}
+
+.blood-stock__quantity,
+.blood-stock__expiry {
+  display: block;
+  font-size: 1.2rem;
+  margin: 8px 0;
+}
+.table-container {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.table-controls input,
+.table-controls select,
+.table-controls button {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--sub-color);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+}
+
+.donor-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.donor-table th,
+.donor-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.donor-table th {
+  background-color: var(--main-color-light);
+  color: #fff;
+}
+
+.donor-table td {
+  background-color: #f9f9f9;
+}
+
+.donor-table tr:nth-child(even) td {
+  background-color: #ffffff;
+}
+
+.table-controls #add-donor {
+  background-color: #941c2f;
+  color: #fff;
+}
+
+.actions button {
+  font-family: var(--main-font);
+  font-size: 1.2rem;
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.actions .edit {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.actions .delete {
+  background-color: var(--second-color);
+  color: #fff;
+}
+
+/* Add styles for the add donor form */
+.add-donor-form {
+  display: none;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.add-donor-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-donor-form button[type="submit"],
+.add-recipient-form button[type="submit"] {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+.add-donor-form button[type="submit"]:hover,
+.add-recipient-form button[type="submit"]:hover {
+  background-color: var(--main-color-dark);
+}
+.add-donor-form #cancel-add-donor,
+.add-recipient-form #cancel-add-recipient {
+  background-color: var(--second-color);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+  cursor: pointer;
+}
+.add-donor-form #cancel-add-donor:hover,
+.add-recipient-form #cancel-add-recipient:hover {
+  background-color: #8f0707;
+}
+.add-donor-form label {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.add-donor-form input,
+.add-donor-form select,
+.add-donor-form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--sub-color);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+}
+
+.table-container {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.table-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.table-controls input,
+.table-controls select,
+.table-controls button {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid var(--sub-color);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+}
+
+.recipient-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.recipient-table th,
+.recipient-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.recipient-table th {
+  background-color: var(--main-color-light);
+  color: #fff;
+}
+
+.recipient-table td {
+  background-color: #f9f9f9;
+}
+
+.recipient-table tr:nth-child(even) td {
+  background-color: #ffffff;
+}
+
+.table-controls #add-recipient {
+  background-color: #941c2f;
+  color: #fff;
+}
+
+.add-recipient-form {
+  display: none;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.add-recipient-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-recipient-form label {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+}
+
+.add-recipient-form input,
+.add-recipient-form select,
+.add-recipient-form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--sub-color);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: var(--main-font);
+}
+
+.actions button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.actions .edit {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.actions .delete {
+  background-color: var(--second-color);
+  color: #fff;
+}
